@@ -294,7 +294,7 @@
 }
 
 /* Media Queries cho Mobile */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
     .product {
         width: calc(25% - 15px);
     }
