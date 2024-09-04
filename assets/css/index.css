@@ -135,8 +135,9 @@
 .link-product{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 5px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .product {
@@ -144,7 +145,6 @@
     background-color: #ffffff;
     padding: 10px;
     border-radius: 5px;
-    text-align: center;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     transition: transform 0.2s ease;
@@ -160,9 +160,10 @@
 }
 
 .product__name {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0;
     min-height: 4.8rem;
+    max-height: 4.8rem;
 }
 
 .product__price {
@@ -293,7 +294,14 @@
 }
 
 /* Media Queries cho Mobile */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1000px){
+    .product {
+        width: calc(25% - 15px);
+    }
+}
+
+
+@media screen and (max-width: 850px) {
     .search-container {
         padding: 10px 0px 0px;
     }
@@ -333,7 +341,6 @@
 
     .category__title{
         min-width: fit-content;
-        margin-right: 10px;
         border-radius: 5px 0px 0px 5px;
     }
 
@@ -347,11 +354,11 @@
 
     .category__list{
         display: flex;
-        overflow-x: auto; /* Thêm cuộn ngang */
+        overflow-x: scroll; /* Thêm cuộn ngang */
         -webkit-overflow-scrolling: touch; /* Cải thiện cuộn trên iOS */
         white-space: nowrap; /* Ngăn chặn các phần tử xuống dòng */
         padding: 0px;
-        gap: 5px;
+        box-sizing: border-box;
     }
 
     .suggestions-list,
@@ -361,12 +368,16 @@
         margin: 0; /* Bỏ khoảng cách bên trái */
     }
 }
-@media screen and (max-width: 480px) {
-    
+
+@media screen and (max-width: 630px){
     .product {
-        width: calc(50% - 5px);
+        width: calc(35% - 23px);
         box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước tổng */
     }
+}
+
+
+@media screen and (max-width: 500px) {
 
     .featured-products__grid {
         gap: 10px; /* Khoảng cách giữa các sản phẩm */
@@ -376,6 +387,11 @@
         padding: 10px;
         gap: 10px;
         flex: 1;
+    }
+
+    .product {
+        width: calc(50% - 5px);
+        box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước tổng */
     }
 
     .category__title {
@@ -403,3 +419,11 @@
         gap: 20px;
     }
 }
+
+@media screen and (max-width: 300px) {
+    .product {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
