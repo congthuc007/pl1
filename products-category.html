@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets\css\base.css">
+    <link rel="stylesheet" href="assets\css\main.css">
+    <link rel="stylesheet" href="assets\css\index.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="index.html" class="header__navbar-item-link"><img src="assets\img\LogoWithName.png" alt=""></a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="index.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-house"></i>
+                                <span>
+                                    Trang chủ
+                                </span>
+                                    
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" id="contactButton" class="header__navbar-item-link">
+                                <i class="fa-solid fa-phone"></i>
+                                <span> 
+                                    Liên hệ
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="order.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-truck"></i>
+                                <span>
+                                    Đơn hàng  
+                                </span>               
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="cart.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>
+                                    Giỏ hàng
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="account-info.html" class="header__navbar-item-link header__navbar-item-link-strong">
+                                <i class="fa-solid fa-user"></i>
+                                <span>
+                                    Tài khoản
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                </nav>
+            </div>
+        </header>
+        
+        <div class="container">
+            <div class="search-container">
+                <form method="get" action="">
+                    <input type="text" id="search" placeholder="Bạn đang tìm gì?">
+                    <button type="submit" class="btn btn-success">Tìm kiếm</button>
+                </form>
+                    <ul id="suggestions" class="suggestions-list">
+                        <a class="suggestion-item-link" href="">
+                            <li class="suggestion-item">
+                                <img src="assets/img/product.jpg">
+                                <span>Thịt Chó</span>
+                            </li>
+                        </a>
+                        <a class="suggestion-item-link" href="">
+                            <li class="suggestion-item">
+                                <img src="assets/img/product.jpg">
+                                <span>Thịt Mèo</span>
+                            </li>
+                        </a>
+                        <a class="suggestion-item-link" href="">
+                            <li class="suggestion-item">
+                                <img src="assets/img/product.jpg">
+                                <span>Thịt Minh Tuệ</span>
+                            </li>
+                        </a>
+                        <!-- Thêm nhiều phần tử khác nếu cần -->
+                    </ul>
+                <div id="no-results" class="no-results">Không có kết quả</div>
+            </div>
+            <div class="container_fproducts">
+                <div class="menu">
+                    <h2 class="category__title">Thức Ăn</h2>
+                                <ul class="category__list">
+                                    <li class="category__item"><a href="products.html" class="category__item-link">Thức Ăn Khô Cho Chó</a></li>
+                                    <li class="category__item"><a href="#" class="category__item-link">Thức Ăn Ướt Cho Chó</a></li>
+                                    <li class="category__item"><a href="#" class="category__item-link">Thức Ăn Khô Cho Mèo</a></li>
+                                    <li class="category__item"><a href="#" class="category__item-link">Thức Ăn Ướt Cho Mèo</a></li>
+                                    <li class="category_item-back"><a href="index.html" class="category__item-link-back"><i class="fa-solid fa-angles-left"></i></a></li>                           
+                                </ul>
+                </div>
+                <div class="products">
+                        <section class="featured-products">
+                            <h2 class="featured-products__title">Sản phẩm</h2>
+                            <div class="featured-products__grid">
+                                
+                                <div class="product">
+                                    <a class="link-product" href="">
+                                        <img src="assets\img\product.jpg" alt="Ảnh sản phẩm" class="product__img">
+                                        <h3 class="product__name">Tên sản phẩm</h3>
+                                        <p class="product__price">100,000₫</p>
+                                        <div class="product__actions">
+                                            <div class="product__rating" data-rating="5"></div>                         
+                                        </div>
+                                    </a>
+                                </div>    
+                                <div class="product">
+                                    <a class="link-product" href="">
+                                    <img src="assets\img\product.jpg" alt="Ảnh sản phẩm" class="product__img">
+                                    <h3 class="product__name">Tên sản phẩm ne sad sdss slassk ekfjdfsvdv  è </h3>
+                                    <p class="product__price">100,000₫</p>
+                                    <div class="product__actions">
+                                        <div class="product__rating" data-rating="5"></div>                         
+                                    </div>
+                                    </a>  
+                                </div>                               
+    
+                            </div>
+                        </section>
+                </div>
+            </div>
+
+        </div>
+        
+        <footer class="footer">
+            <p>&copy; 2024 PETLAND. Bản quyền thuộc về PETLAND.</p>
+        </footer>
+
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-info">
+                    <p><i class="fa-solid fa-phone"></i>0123-456-789</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJQFkZmDGXpvdRqfnZdQJwrPCcCmWVzHNHrRQCQGNvKVtWJxvVvmJLMHxLZkGqphJdV"><i class="fa-solid fa-envelope"></i>petland2024@gmail.com</a>
+                    <p></p>
+                    <a href="https://www.facebook.com/nguyencongthuc384/"><i class="fa-brands fa-facebook"></i></i>facebook.com/petland2024</a>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets\js\main.js"></script>
+    <script src="assets\js\rating.js"></script>
+    <script src="assets\js\search.js"></script>
+</body>
+</html>

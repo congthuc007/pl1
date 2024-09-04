@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets\css\base.css">
+    <link rel="stylesheet" href="assets\css\main.css">
+    <link rel="stylesheet" href="assets\css\product-detail.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="index.html" class="header__navbar-item-link"><img src="assets\img\LogoWithName.png" alt=""></a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="index.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-house"></i>
+                                <span>
+                                    Trang chủ
+                                </span>
+                                    
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" id="contactButton" class="header__navbar-item-link">
+                                <i class="fa-solid fa-phone"></i>
+                                <span> 
+                                    Liên hệ
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="order.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-truck"></i>
+                                <span>
+                                    Đơn hàng  
+                                </span>               
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="cart.html" class="header__navbar-item-link">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>
+                                    Giỏ hàng
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="account-info.html" class="header__navbar-item-link header__navbar-item-link-strong">
+                                <i class="fa-solid fa-user"></i>
+                                <span>
+                                    Tài khoản
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+                <div class="product-detail__container">
+                        <div class="product-detail__image">
+                            <img src="assets\img\product.jpg" alt="Product Image">
+                        </div>
+                        <div class="product-detail__info" >
+                            <h1 class="product-detail__name">Tên sản phẩm</h1>
+                            <p class="product-detail__price">500,000 VND</p>
+                            <div class="rating">
+                                <div class="product-detail__rating" data-rating="4">
+                                </div>
+                                <span>(50 đánh giá)</span>
+                            </div>
+                            <p class="product-detail__origin">
+                                Xuất xứ: Đông Lào
+                            </p>
+                            <p class="product-detail__description">
+                                Mô tả sản phẩm: Đây là mô tả chi tiết của sản phẩm, bao gồm các tính năng, công dụng, và các thông tin liên quan khác.
+                            </p>
+                            <form action="" method="post">
+                                <button class="product-detail__btn-add">Thêm vào giỏ hàng</button>
+                            </form>
+                        </div>
+                </div>
+            
+                <!-- Phần đánh giá của khách hàng -->
+                <div class="customer-reviews">
+                    <h2 class="customer-reviews__title">Đánh giá của khách hàng</h2>
+                    <div class="review">
+                        <div class="review__header">
+                            <span class="review__name">Nguyễn Văn A</span>
+                            <div class="review__rating" data-rating="4.0">
+                                <!-- JavaScript sẽ tạo các biểu tượng sao ở đây -->
+                            </div>
+                        </div>
+                        <p class="review__content">
+                            Sản phẩm rất tốt, tôi rất hài lòng!
+                        </p>
+                        <span class="review__time">21/8/2024 10:16</span>
+                        <div class="respond">
+                            <span class="respond__name">Cửa hàng đã phản hồi</span>
+                            <p class="respond__content">
+                                Cảm ơn bạn đã đánh giá! Mong bạn đừng đánh giá nữa
+                            </p>
+                            <span class="respond__time">21/8/2024 10:16</span>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review__header">
+                            <span class="review__name">Nguyễn Văn A</span>
+                            <div class="review__rating" data-rating="4.0">
+                                <!-- JavaScript sẽ tạo các biểu tượng sao ở đây -->
+                            </div>
+                        </div>
+                        <p class="review__content">
+                            Sản phẩm rất tốt, tôi rất hài lòng!
+                        </p>
+                        <span class="review__time">21/8/2024 10:16</span>
+                        <div class="respond">
+                            <span class="respond__name">Cửa hàng đã phản hồi</span>
+                            <p class="respond__content">
+                                Cảm ơn bạn đã đánh giá! Mong bạn đừng đánh giá nữa
+                            </p>
+                            <span class="respond__time">21/8/2024 10:16</span>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 PETLAND. Bản quyền thuộc về PETLAND.</p>
+        </footer>
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-info">
+                    <p><i class="fa-solid fa-phone"></i>0123-456-789</p>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJQFkZmDGXpvdRqfnZdQJwrPCcCmWVzHNHrRQCQGNvKVtWJxvVvmJLMHxLZkGqphJdV"><i class="fa-solid fa-envelope"></i>petland2024@gmail.com</a>
+                    <p></p>
+                    <a href="https://www.facebook.com/nguyencongthuc384/"><i class="fa-brands fa-facebook"></i></i>facebook.com/petland2024</a>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets\js\main.js"></script>
+    <script src="assets\js\rating.js"></script>
+</body>
+</html>
