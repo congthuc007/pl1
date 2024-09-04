@@ -1,0 +1,311 @@
+/* Giỏ hàng */
+.container {
+    width: 80%;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-name {
+    color: #007BFF;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.select-all {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 80px;
+    margin: 0 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-name {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.item-prices {
+    display: flex;
+    align-items: center;
+    color: #007BFF;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.quantity-button {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.quantity {
+    width: 30px;
+    text-align: center;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+}
+
+/* Thông báo */
+#empty-cart-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Footer */
+
+/* Thông báo giỏ hàng trống */
+#empty-cart-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    display: none; /* Mặc định ẩn thông báo */
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.cart-footer__actions {
+    display: flex;
+    align-items: center;
+}
+
+.cart-footer__actions input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.cart-footer__actions label {
+    font-size: 14px;
+}
+
+.cart-footer__actions button {
+    background: none;
+    border: none;
+    color: #007BFF;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-footer__summary {
+    display: flex;
+    align-items: center;
+}
+
+.cart-footer__total-text {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.total-price,
+.cart-footer__total-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.cart-footer__checkout-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+.cart-footer__checkout-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media Queries cho Mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px;
+        box-shadow: none; /* Xóa bóng để tiết kiệm không gian trên màn hình nhỏ */
+        margin: 0px;
+        width: 100%;
+    }
+
+    .cart-name {
+        font-size: 24px; /* Giảm kích thước chữ cho tiêu đề giỏ hàng */
+    }
+
+    .cart-item img {
+        width: 60px; /* Giảm kích thước ảnh sản phẩm */
+    }
+
+    .item-name {
+        font-size: 14px; /* Giảm kích thước chữ cho tên sản phẩm */
+    }
+
+    .item-prices {
+        font-size: 14px; /* Giảm kích thước chữ cho giá */
+    }
+
+    .quantity-control {
+        margin-right: 0; /* Xóa khoảng cách bên phải */
+        margin-bottom: 10px; /* Thêm khoảng cách dưới phần điều khiển số lượng */
+    }
+
+    .quantity-button {
+        padding: 4px 8px; /* Giảm padding cho nút điều chỉnh số lượng */
+    }
+
+    .quantity {
+        width: 25px; /* Giảm kích thước của số lượng */
+    }
+
+    .delete-button {
+        font-size: 16px; /* Giảm kích thước chữ cho nút xóa */
+    }
+
+    #empty-cart-message {
+        font-size: 1.2rem; /* Giảm kích thước chữ cho thông báo giỏ hàng trống */
+    }
+
+    .cart-footer {
+        padding: 10px;
+    }
+
+    .cart-footer__actions {
+        align-items: center;
+    }
+
+    .cart-footer__actions label {
+        font-size: 12px; /* Giảm kích thước chữ cho nhãn chọn tất cả */
+    }
+
+    .cart-footer__actions button {
+        font-size: 14px; /* Giảm kích thước chữ cho nút xóa */
+        margin-left: 0; /* Xóa khoảng cách bên trái */
+    }
+
+    .cart-footer__summary {
+        font-size: 14px; /* Giảm kích thước chữ cho tổng thanh toán */
+    }
+
+    .cart-footer__total-text {
+        font-size: 14px; /* Giảm kích thước chữ cho văn bản tổng thanh toán */
+    }
+
+    .cart-footer__total-price {
+        font-size: 18px; /* Giảm kích thước chữ cho giá tổng thanh toán */
+    }
+
+    .cart-footer__checkout-button {
+        font-size: 14px; /* Giảm kích thước chữ cho nút mua hàng */
+        padding: 8px 15px; /* Giảm padding cho nút */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cart-name {
+        font-size: 20px; /* Giảm kích thước chữ cho tiêu đề giỏ hàng */
+        padding-bottom: 20px;
+    }
+
+    .cart-item {
+        padding: 10px;
+    }
+
+    .cart-item img {
+        width: 50px; /* Giảm kích thước ảnh sản phẩm */
+    }
+
+    .item-name {
+        font-size: 12px; /* Giảm kích thước chữ cho tên sản phẩm */
+    }
+
+    .item-prices {
+        font-size: 12px; /* Giảm kích thước chữ cho giá */
+    }
+
+    .quantity-control {
+        margin-bottom: 5px; /* Giảm khoảng cách dưới phần điều khiển số lượng */
+    }
+
+    .quantity-button {
+        padding: 3px 6px; /* Giảm padding cho nút điều chỉnh số lượng */
+    }
+
+    .quantity {
+        width: 20px; /* Giảm kích thước của số lượng */
+    }
+
+    .delete-button {
+        font-size: 14px; /* Giảm kích thước chữ cho nút xóa */
+    }
+
+    #empty-cart-message {
+        font-size: 1rem; /* Giảm kích thước chữ cho thông báo giỏ hàng trống */
+    }
+
+    .cart-footer {
+        padding: 5px;
+    }
+
+    .cart-footer__actions label {
+        font-size: 10px; /* Giảm kích thước chữ cho nhãn chọn tất cả */
+    }
+
+    .cart-footer__actions button {
+        font-size: 12px; /* Giảm kích thước chữ cho nút xóa */
+    }
+
+    .cart-footer__summary {
+        font-size: 12px; /* Giảm kích thước chữ cho tổng thanh toán */
+    }
+
+    .cart-footer__total-text {
+        font-size: 12px; /* Giảm kích thước chữ cho văn bản tổng thanh toán */
+    }
+
+    .cart-footer__total-price {
+        font-size: 16px; /* Giảm kích thước chữ cho giá tổng thanh toán */
+    }
+
+    .cart-footer__checkout-button {
+        font-size: 12px; /* Giảm kích thước chữ cho nút mua hàng */
+    }
+}

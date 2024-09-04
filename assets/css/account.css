@@ -1,0 +1,312 @@
+/* login style */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container__login{
+    width: 55rem;
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(164, 222, 255, 0.819);
+    margin: 25px;
+}
+
+.container form{
+    width: 80%;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 30px auto 20px;
+    font-size: 3rem;
+    color: #333;
+}
+
+.container .input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container .re-fr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reme{
+    display: flex;
+    align-items: center;
+}
+
+.container .login-checkbox{
+    margin-right: 5px;
+}
+
+.container .login-reme {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.container a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: blue;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+
+.container button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3)
+}
+
+.container button[type="submit"],
+.container__forgot-password .button{
+    background-color:rgb(0, 162, 255);
+    color: white;
+    margin-top: 15px;
+}
+
+.container button[type="submit"]:hover,
+.container__forgot-password .button:hover{
+    background-color: rgb(112, 203, 255);
+    box-shadow: 0px 0px 5px rgb(0, 162, 255)
+}
+
+
+.container .register{
+    background-color:rgb(255, 255, 255);
+    color: #333;
+}
+
+
+.container .register:hover{
+    color: red;
+    box-shadow: 0px 0px 5px red
+}
+
+.container .service{
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.container .service a{
+    margin: 0 3px;
+}
+
+/* register style */
+.container__register{
+    width: 55rem;
+    height: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(164, 222, 255, 0.819);
+    margin: 25px;
+}
+
+
+.container__register form .form-group input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container .error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+
+/* forgot_password style */
+.container__forgot-password{
+    width: 55rem;
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(164, 222, 255, 0.819);
+    margin: 25px;
+}
+
+.container__forgot-password h2{
+    margin-top: -10px;
+}
+
+.container__forgot-password form input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container__forgot-password .logo{
+    width: 15rem;
+    margin-top: -20px;
+}
+
+.container h3{
+    font-weight: 300;
+}
+
+.container .input-otp{
+
+    text-align: center;
+} 
+
+.container__forgot-password .changebtn{
+    width: 100%;
+}
+
+
+.container__forgot-password .rebtn{
+    color: blue;
+}
+
+.container__forgot-password .rebtn:hover{
+    border: 1px solid rgb(68, 183, 255);
+    color: rgb(68, 183, 255);
+}
+
+.container__forgot-password .close{
+    background-color: #fff;
+    color: black;
+}
+
+.container__forgot-password .close:hover{
+    color:red;
+    border: 1px solid red;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .container__login,
+    .container__register,
+    .container__forgot-password{
+        width: 80%;
+    }
+
+    .container h2 {
+        font-size: 2.5rem;
+    }
+
+    .container .input {
+        font-size: 14px;
+
+    }
+
+    .container button {
+        font-size: 14px;
+    }
+
+    .container .login-reme {
+        font-size: 1.2rem;
+    }
+
+    .container a {
+        font-size: 1.2rem;
+    }
+
+    .container .service {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container__login {
+        width: 300px;
+        height: 330px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+    .container__register{
+        width: 300px;
+        height: 500px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .container__forgot-password{
+        width: 300px;
+        height: 350px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .container__forgot-password .logo{
+        width: 90px;
+        margin: 10px auto -20px;
+    }
+
+    .container h3 {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+        margin: 20px auto 10px;
+    }
+
+    .container .input {
+        font-size: 12px;
+    }
+
+    .container button {
+        font-size: 12px;
+    }
+
+    .container .login-reme {
+        font-size: 1rem;
+    }
+
+    .container a {
+        font-size: 1rem;
+    }
+
+    .container .service {
+        font-size: 1rem;
+    }
+}

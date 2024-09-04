@@ -1,0 +1,308 @@
+/* General Styles */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.c-logo img {
+    width: 20rem;
+}
+
+.information {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.c-info {
+    text-align: left;
+}
+
+.c-info p {
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.c-info p i {
+    color: #888;
+    cursor: pointer;
+}
+
+/* Button Styles */
+.if-address button,
+.btn button {
+    margin: 5px auto;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.if-address button,
+.btn .change {
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+.if-address button:hover,
+.btn .change:hover {
+    background-color: rgb(112, 203, 255);
+    box-shadow: 0px 0px 5px rgb(0, 162, 255);
+}
+
+.btn .del {
+    background-color: rgb(227, 227, 227);
+    color: #333;
+}
+
+.btn .del:hover {
+    color: red;
+    box-shadow: 0px 0px 5px red;
+}
+
+/* Category List Styles */
+.category__list {
+    list-style: none;
+    padding-left: 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.category__item {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.category__item:hover {
+    background-color: #f5f5f5;
+}
+
+.category__item i {
+    margin-right: 5px;
+}
+
+.category__list a:hover {
+    text-decoration: none;
+}
+
+/* Voucher Table Styles */
+.voucher-table {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.voucher-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.voucher-table table th,
+.voucher-table table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+.voucher-table table th {
+    background-color: #66afe9;
+}
+
+/* Address Styles */
+.if-address {
+    padding: 20px 40px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information form {
+    align-items: center;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.cf-address,
+.btn-add-address {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(0, 162, 255);
+    color: white;
+}
+
+.cf-address:hover,
+.btn-add-address:hover {
+    background-color: rgb(112, 203, 255);
+    box-shadow: 0px 0px 5px rgb(0, 162, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .c-logo img {
+        display: none;
+    }
+
+    .information {
+        padding: 5px;
+    }
+
+    .c-info p {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .if-address button,
+    .btn button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .category__list{
+        display: flex;
+        overflow-x: auto; /* Thêm cuộn ngang */
+        -webkit-overflow-scrolling: touch; /* Cải thiện cuộn trên iOS */
+        white-space: nowrap; /* Ngăn chặn các phần tử xuống dòng */
+        padding: 0px;
+        gap: 5px;
+    }
+    
+    .category__item {
+        font-size: 1.2rem;
+        padding: 8px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        min-width: 120px;
+        background-color: none;
+    }
+
+    .hide-item{
+        display: none;
+    }
+
+    .voucher-table table th,
+    .voucher-table table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .if-address {
+        padding: 10px;
+    }
+
+    .form-group {
+        font-size: 12px;
+    }
+
+    .cf-address,
+    .btn-add-address {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .c-logo img {
+        width: 10rem;
+    }
+
+    .information {
+        padding: 5px;
+    }
+
+    .c-info p {
+        font-size: 1rem;
+        padding: 6px;
+    }
+
+    .if-address button,
+    .btn button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .category__item {
+        font-size: 1rem;
+        padding: 6px;
+    }
+
+    .voucher-table table th,
+    .voucher-table table td {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .if-address {
+        padding: 5px;
+    }
+
+    .form-group {
+        font-size: 10px;
+    }
+
+    .cf-address,
+    .btn-add-address {
+        font-size: 10px;
+    }
+}
