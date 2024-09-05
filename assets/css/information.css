@@ -4,14 +4,25 @@
     height: 100%;
     display: flex;
     gap: 20px;
-    padding: 20px;
+    padding: 0px 15%;
     border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 a {
     text-decoration: none;
+}
+
+.c-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .c-logo img {
@@ -21,9 +32,12 @@ a {
 .information {
     flex: 1;
     background-color: #ffffff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px 0px;
+
+}
+
+h1{
+    margin-top: 0;
 }
 
 .c-info {
@@ -31,8 +45,8 @@ a {
 }
 
 .c-info p {
-    font-size: 1.5rem;
-    padding: 10px;
+    font-size: 1.8rem;
+    padding: 12px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -52,13 +66,14 @@ a {
 .btn button {
     margin: 5px auto;
     display: inline-block;
-    padding: 10px;
+    padding: 12px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .if-address button,
@@ -87,21 +102,24 @@ a {
 .category__list {
     list-style: none;
     padding-left: 0;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
 }
 
 .category__item {
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
     color: #333;
     font-size: 1.5rem;
     display: block;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
 }
 
 .category__item:hover {
-    background-color: #f5f5f5;
+    background-color: #dedede;
+    box-shadow: 0px 0px 5px rgb(10, 10, 10);
+    transform: scale(1.05);
 }
 
 .category__item i {
@@ -115,14 +133,15 @@ a {
 /* Voucher Table Styles */
 .voucher-table {
     width: 100%;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
 }
 
 .voucher-table table {
     width: 100%;
     border-collapse: collapse;
+    background-color: #ffffff;
 }
 
 .voucher-table table th,
@@ -139,13 +158,11 @@ a {
 
 /* Address Styles */
 .if-address {
-    padding: 20px 40px;
+    padding: 20px 0px;
 }
 
-.information{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#address-display, #success-message{
+    font-size: 1.4rem;
 }
 
 .information form {
@@ -189,11 +206,30 @@ a {
     box-shadow: 0px 0px 5px rgb(0, 162, 255);
 }
 
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0px 10%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 0px 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
         padding: 10px;
-        gap: 10px;
+        gap: 0px;
+    }
+    
+    .c-logo{
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px;
+        margin: 10px 0px;
     }
 
     .c-logo img {
@@ -222,6 +258,8 @@ a {
         white-space: nowrap; /* Ngăn chặn các phần tử xuống dòng */
         padding: 0px;
         gap: 5px;
+        flex: 1;
+        justify-content: center;
     }
     
     .category__item {
@@ -229,8 +267,16 @@ a {
         padding: 8px;
         box-sizing: border-box;
         border-radius: 5px;
-        min-width: 120px;
+        min-width: fit-content;
         background-color: none;
+        margin: 5px 5px;
+        transition: none;
+    }
+    
+    .category__item:hover {
+        transform: none;
+        background-color: none;
+        box-shadow: none;
     }
 
     .hide-item{
@@ -258,38 +304,32 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-    .container {
-        padding: 5px;
-        gap: 5px;
-    }
-
-    .c-logo img {
-        width: 10rem;
-    }
-
     .information {
         padding: 5px;
     }
 
     .c-info p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 6px;
     }
 
     .if-address button,
     .btn button {
         font-size: 12px;
-        padding: 6px;
+    }
+
+    .category__list{
+        margin: 0px;
     }
 
     .category__item {
-        font-size: 1rem;
+        font-size: 11px;
         padding: 6px;
     }
 
     .voucher-table table th,
     .voucher-table table td {
-        font-size: 10px;
+        font-size: 11px;
         padding: 6px;
     }
 
@@ -298,11 +338,11 @@ a {
     }
 
     .form-group {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .cf-address,
     .btn-add-address {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
