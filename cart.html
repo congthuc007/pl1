@@ -70,60 +70,63 @@
             </div>
         </header>
         <div class="container">
-            <h1 class="cart-name">Giỏ Hàng</h1>
-        
-            <div id="empty-cart-message" style="display: none;">
-                <p>Giỏ hàng của bạn hiện đang trống.</p>
-            </div>
-        
-            <!-- Cart Item 1 -->
-            <div class="cart-item">
-                <input type="checkbox" class="select-item" id="item1" name="select-item">
-                <img src="assets/img/product.jpg" alt="">
-                <div class="item-details">
-                    <span class="item-name">Tên Sản Phẩm</span>
-                    <div class="item-prices">
-                        <span class="price">100000đ</span>
+            <div class="c-cart">
+
+                <h1 class="cart-name">Giỏ Hàng</h1>
+            
+                <div id="empty-cart-message" style="display: none;">
+                    <p>Giỏ hàng của bạn hiện đang trống.</p>
+                </div>
+            
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <input type="checkbox" class="select-item" id="item1" name="select-item">
+                    <img src="assets/img/product.jpg" alt="">
+                    <div class="item-details">
+                        <span class="item-name">Tên Sản Phẩm</span>
+                        <div class="item-prices">
+                            <span class="price">100000đ</span>
+                        </div>
                     </div>
-                </div>
-                <div class="quantity-control">
-                    <button class="quantity-button decrease">-</button>
-                    <span class="quantity">1</span>
-                    <button class="quantity-button increase">+</button>
-                </div>
-                <button class="delete-button"><i class="fa-regular fa-trash-can"></i></button>
-            </div>
-        
-            <!-- Cart Item 2 -->
-            <div class="cart-item">
-                <input type="checkbox" class="select-item" id="item2" name="select-item">
-                <img src="assets/img/product.jpg" alt="">
-                <div class="item-details">
-                    <span class="item-name">Tên Sản Phẩm</span>
-                    <div class="item-prices">
-                        <span class="price">100000đ</span>
+                    <div class="quantity-control">
+                        <button class="quantity-button decrease">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-button increase">+</button>
                     </div>
+                    <button class="delete-button"><i class="fa-regular fa-trash-can"></i></button>
                 </div>
-                <div class="quantity-control">
-                    <button class="quantity-button decrease">-</button>
-                    <span class="quantity">1</span>
-                    <button class="quantity-button increase">+</button>
+            
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <input type="checkbox" class="select-item" id="item2" name="select-item">
+                    <img src="assets/img/product.jpg" alt="">
+                    <div class="item-details">
+                        <span class="item-name">Tên Sản Phẩm</span>
+                        <div class="item-prices">
+                            <span class="price">100000đ</span>
+                        </div>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-button decrease">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-button increase">+</button>
+                    </div>
+                    <button class="delete-button"><i class="fa-regular fa-trash-can"></i></button>
                 </div>
-                <button class="delete-button"><i class="fa-regular fa-trash-can"></i></button>
-            </div>
-        
-            <!-- Add more cart items as needed -->
-        
-            <div class="cart-footer">
-                <div class="cart-footer__actions">
-                    <input type="checkbox" id="select-all-footer" name="select">
-                    <label for="select-all-footer">Chọn Tất Cả</label>
-                    <button class="cart-footer__delete">Xóa</button>
-                </div>
-                <div class="cart-footer__summary">
-                    <span class="cart-footer__total-text">Tổng thanh toán:</span>
-                    <span class="total-price"><span class="cart-footer__total-price"></span>đ</span>
-                    <button class="cart-footer__checkout-button" onclick="window.location.href='buy.html'">Mua Hàng</button>
+            
+                <!-- Add more cart items as needed -->
+            
+                <div class="cart-footer">
+                    <div class="cart-footer__actions">
+                        <input type="checkbox" id="select-all-footer" name="select">
+                        <label for="select-all-footer">Chọn Tất Cả</label>
+                        <button class="cart-footer__delete">Xóa</button>
+                    </div>
+                    <div class="cart-footer__summary">
+                        <span class="cart-footer__total-text">Tổng thanh toán:</span>
+                        <span class="total-price"><span class="cart-footer__total-price"></span>đ</span>
+                        <button class="cart-footer__checkout-button" onclick="window.location.href='buy.html'">Mua Hàng</button>
+                    </div>
                 </div>
             </div>
         </div>

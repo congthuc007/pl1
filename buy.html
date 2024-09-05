@@ -96,6 +96,25 @@
                         <span class="product-price">100.000₫</span>
                     </div>
                 </div>
+                <div class="product-info">
+                    <img src="assets\img\product.jpg" alt="">
+                    <div class="product-details">
+                        <span class="product-name">Tên sản phẩm</span>
+                        <span class="product-type">Phân loại hàng:</span>
+                        <span class="product-quantity">x1</span>
+                        <span class="product-price">100.000₫</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <img src="assets\img\product.jpg" alt="">
+                    <div class="product-details">
+                        <span class="product-name">Tên sản phẩm</span>
+                        <span class="product-type">Phân loại hàng:</span>
+                        <span class="product-quantity">x1</span>
+                        <span class="product-price">100.000₫</span>
+                    </div>
+                </div>
+                
                 
             </div>
             <div class="send">
@@ -115,19 +134,22 @@
                         <tr>
                             <th>Mã</th>
                             <th>Mô tả</th>
-                            <th>Giảm giá</th>
-                            <th>Chọn</th>
+                            <th>Ngày áp dụng</th>
+                            <th>Hạn hết hạn</th>
+                            <th></th>
                         </tr>
                         <tr>
                             <td>VOUCHER01</td>
                             <td>Giảm 10% cho đơn hàng trên 500k</td>
-                            <td>10%</td>
+                            <td>12/02/2025</td>
+                            <td>12/02/2025</td>
                             <td><button class="select-voucher" data-code="VOUCHER01">Chọn</button></td>
                         </tr>
                         <tr>
                             <td>VOUCHER02</td>
                             <td>Giảm 50k cho đơn hàng trên 300k</td>
-                            <td>50k</td>
+                            <td>12/02/2025</td>
+                            <td>12/02/2025</td>
                             <td><button class="select-voucher" data-code="VOUCHER02">Chọn</button></td>
                         </tr>
                     </table>
@@ -171,15 +193,11 @@
                     <label for="street">Số nhà, tên đường:</label>
                     <input type="text" id="street" name="street" placeholder="Nhập số nhà, tên đường" required>
                 </div>
-                <button class="btn-add-address" type="submit">Thay Đổi Địa Chỉ</button>
-                <button class="cf-address" type="button" id="confirm-address" style="display: none;">Xác Nhận</button>
+                <div id="address-display">
+                    <textarea id="full-address" rows="4" readonly style="display: none;"></textarea>
+                </div>
+                <button id="add-address" type="submit">Thêm Địa Chỉ</button>
             </form>
-        
-            <div id="address-display">
-                <h3>Địa Chỉ Đã Nhập:</h3>
-                <p id="full-address"></p>
-            </div>
-            <div id="success-message" style="color: green; font-weight: bold;"></div>
         </div>
 
         <footer class="footer">

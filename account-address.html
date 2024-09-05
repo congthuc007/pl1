@@ -74,14 +74,16 @@
                 <div class="c-logo">
                     <img src="assets\img\Logo.png" alt="Logo">
                     <ul class="category__list">
+                        <a href="index.html"><li class="category__item hide-item"><i class="fa-solid fa-house"></i>Trang chủ</li></a>
                         <a href="account-info.html"><li class="category__item"><i class="fa-solid fa-user"></i>Thông tin tài khoản</li></a>
                         <a href="account-discount.html"><li class="category__item"><i class="fa-solid fa-ticket"></i>Mã giảm giá</li></a>
+                        <a href="order.html"><li class="category__item hide-item"><i class="fa-solid fa-truck"></i>Đơn hàng của bạn</li></a>
                         <a href="account-login.html" id="logout-link"><li class="category__item"><i class="fa-solid fa-right-from-bracket"></i>Thoát tài khoản</li></a>
                     </ul>
                 </div>
 
                 <div class="information if-address">
-                    <h2>Thêm Địa Chỉ</h2>
+                    <h1>Thêm Địa Chỉ</h1>
                     <form id="address-form">
                         <div class="form-group">
                             <label for="province">Tỉnh/Thành phố:</label>
@@ -105,15 +107,13 @@
                             <label for="street">Số nhà, tên đường:</label>
                             <input type="text" id="street" name="street" placeholder="Nhập số nhà, tên đường" required>
                         </div>
-                        <button type="submit">Thêm Địa Chỉ</button>
-                        <button class="cf-address" type="button" id="confirm-address" style="display: none;">Xác Nhận</button>
+                        <div id="address-display">
+                            <textarea id="full-address" rows="4" readonly style="display: none;"></textarea>
+                        </div>
+                        <button id="add-address" type="submit">Thêm Địa Chỉ</button>
                     </form>
                 
-                    <div id="address-display">
-                        <h3>Địa Chỉ Đã Nhập:</h3>
-                        <p id="full-address"></p>
-                    </div>
-                    <div id="success-message" style="color: green; font-weight: bold;"></div>
+
                 </div>
                 
 
