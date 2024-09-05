@@ -253,14 +253,14 @@
 @media screen and (max-width: 480px) {
     .container__login {
         width: 300px;
-        height: 350px;
+        height: 370px;
         padding-bottom: 20px;
         padding-top: 10px;
         box-sizing: border-box;
     }
     .container__register{
         width: 300px;
-        height: 500px;
+        height: 510px;
         padding-bottom: 20px;
         padding-top: 10px;
         box-sizing: border-box;
@@ -268,7 +268,7 @@
 
     .container__forgot-password{
         width: 300px;
-        height: 350px;
+        height: 360px;
         padding-bottom: 20px;
         padding-top: 10px;
         box-sizing: border-box;
@@ -276,8 +276,8 @@
 
     .container__change-password{
         width: 300px;
-        height: 410px;
-        padding-bottom: 20px;
+        height: 420px;
+        padding-bottom: 30px;
         padding-top: 10px;
         box-sizing: border-box;
     }
