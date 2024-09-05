@@ -13,5 +13,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             // Chuyển hướng đến trang đăng nhập
             window.location.href = logoutLink.href;
         }
+        else{
+            event.preventDefault();
+        }
     });
 });

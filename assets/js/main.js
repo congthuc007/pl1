@@ -128,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Kiểm tra mã OTP (thay đổi '123456' thành mã OTP thực tế)
         if (otpInput === '123456') {
             // Thông báo thành công
-            alert('Bạn đã đăng ký thành công.');
 
             // Gửi thông tin tài khoản đến máy chủ để lưu vào cơ sở dữ liệu
             var phone = localStorage.getItem('phone');
