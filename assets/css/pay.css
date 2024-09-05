@@ -78,7 +78,8 @@
 
 .next-btn {
     display: none;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 

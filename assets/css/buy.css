@@ -42,7 +42,7 @@
 .address-info .c-address{
     font-size: 12px;
     margin-right: 5px;
-    padding: 0px 5px;
+    padding: 0px 5px 0px 0px;
     border-right: 1px solid;
 }
 
@@ -269,8 +269,7 @@
     box-sizing: border-box;
 }
 
-.cf-address,
-.btn-add-address {
+#add-address {
     width: 100%;
     font-size: 14px;
     padding: 10px;
