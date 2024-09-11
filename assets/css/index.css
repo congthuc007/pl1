@@ -273,6 +273,7 @@
 
 .suggestions-list li:hover {
     background-color: #f0f0f0;
+    border-radius: 5px;
 }
 
 .suggestion-item-link{
@@ -343,7 +344,7 @@
         min-width: fit-content;
         border-radius: 5px 0px 0px 5px;
         background-color: unset;
-        color:  #333;
+        color: #333;
     }
 
     .category__item{
