@@ -2750,6 +2750,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Xử lý sự kiện thêm địa chỉ với xác nhận
   addButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Ngăn chặn hành vi gửi biểu mẫu mặc định
       // Hiển thị xác nhận trước khi thêm địa chỉ
       var confirmAdd = confirm("Bạn có chắc chắn muốn thêm địa chỉ này không?");
       if (confirmAdd) {
@@ -2757,10 +2758,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Địa chỉ đã được thêm thành công!');
           } else {
             alert('Vui lòng điền đầy đủ thông tin.');
-            event.preventDefault(); // Ngăn chặn hành vi gửi biểu mẫu mặc định
           }
-      }else{
-        event.preventDefault(); // Ngăn chặn hành vi gửi biểu mẫu mặc định
       }
   });
 
