@@ -23,6 +23,7 @@ a {
     border-radius: 5px;
     justify-content: space-between;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    max-height: 470px;
 }
 
 .c-logo img {
@@ -153,6 +154,38 @@ h1{
 
 .voucher-table table th {
     background-color: #66afe9;
+}
+
+
+.discount-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.discount-code {
+    flex: 1;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.apply-discount {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    max-height: 30px;
+}
+
+.apply-discount:hover {
+    background-color: #5eacff;
 }
 
 /* Address Styles */
@@ -286,6 +319,14 @@ h1{
     .voucher-table table td {
         font-size: 12px;
         padding: 8px;
+    }
+
+    .discount-code {
+        padding: 6px;
+    }
+
+    .apply-discount {
+        padding: 6px 10px;
     }
 
     .if-address {

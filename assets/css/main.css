@@ -131,7 +131,7 @@ body {
 .footer {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 2px 20px;
     text-align: center;
 }
 
@@ -163,7 +163,6 @@ body {
     }
 
     .footer {
-        padding: 8px 10px;
         font-size: 1.2rem;
     }
 }
@@ -199,7 +198,6 @@ body {
     }
 
     .footer {
-        padding: 5px 8px;
         font-size: 1rem;
     }
 }
