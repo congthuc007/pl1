@@ -131,11 +131,15 @@
     margin-right: 10px;
 }
 
-.cart-footer__total-price {
+.final-price {
     font-size: 20px;
     font-weight: bold;
     color: #007BFF;
-    margin-right: 20px;
+}
+
+.original-price {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .cart-footer__checkout-button {
@@ -154,6 +158,12 @@
 
 
 /* voicher */
+.disabled-voucher {
+    background-color: #d3d3d3; /* Màu xám */
+    color: #808080; /* Chữ xám */
+    cursor: not-allowed; /* Hiện con trỏ không cho phép */
+}
+
 .voucher-table {
     width: 100%;
     background-color: #fff;
@@ -187,49 +197,34 @@
 }
 
 .select-voucher {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 3px;
-    width: 100%;
+    background-color: #007BFF; /* Màu nền bình thường */
+    color: #fff; /* Màu chữ */
+    border: none; /* Không có viền */
+    padding: 5px 10px; /* Padding */
+    cursor: pointer; /* Con trỏ chuột */
+    border-radius: 3px; /* Bo góc */
+    width: 100%; /* Chiều rộng */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
 }
 
-.select-voucher:hover {
-    background-color: #5eacff;
+.disabled-voucher {
+    background-color: #c0c0c0; /* Màu nền cho nút bị vô hiệu hóa */
+    color: #7d7d7d; /* Màu chữ cho nút bị vô hiệu hóa */
+    cursor: not-allowed; /* Con trỏ không cho phép */
 }
 
-.discount-input {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+
+.selected-voucher {
+    border: 2px solid red; /* Viền đỏ */
+    color: red; /* Chữ đỏ */
+    background-color: white; /* Nền trắng */
 }
 
-.discount-code {
-    flex: 1;
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 14px;
-    margin-right: 10px;
+.voucher-button {
+    padding: 10px 20px; /* Thêm khoảng cách cho nút */
+    cursor: pointer; /* Hiển thị con trỏ khi di chuột */
 }
 
-.apply-discount {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 8px 12px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 3px;
-    max-height: 30px;
-}
-
-.apply-discount:hover {
-    background-color: #5eacff;
-}
 
 /* Address */
 /* Hiệu ứng mờ nền */
@@ -368,20 +363,12 @@
 
     .cart-footer__summary {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
+        gap: 10px;
     }
 
     .price{
         margin-bottom: 10px;
-    }
-
-    .cart-footer__total-text {
-        font-size: 14px;
-    }
-
-    .cart-footer__total-price {
-        font-size: 18px;
-
     }
 
     .cart-footer__checkout-button {
