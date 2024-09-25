@@ -61,6 +61,9 @@
     font-size: 1.4rem;
     line-height: 1.6;
     flex: 1;
+    min-height: 65px;
+    max-height: 65px;
+    overflow-y: auto;
 }
 
 .product-detail__btn-add {
@@ -260,6 +263,8 @@
 
     .product-detail__description {
         font-size: 1.2rem; /* Giảm kích thước chữ cho mô tả sản phẩm */
+        max-height: none;
+        overflow-y: none;
     }
 
     .product-detail__btn-add {
