@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color:  #eeeeee;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 150px;
+}
+
+.pay-container {
+    margin: auto;
+    width: 75%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    flex: 1;
+}
+
+.order-info{
+    border-bottom: 1px solid #ccc;
+}
+
+.order-info span{
+    font-weight: 300;
+    color: #007BFF;
+}
+
+.minilogo{
+    width: 90px;
+
+}
+
+.payment-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.payment-option label{
+    font-size: 14px;
+}
+
+.payment-option {
+    margin-bottom: 15px;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.btn-submit-payment {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.continue-shopping:hover,
+.view-orders:hover,
+.btn-submit-payment:hover {
+    background-color: rgb(112, 203, 255);
+    box-shadow: 0px 0px 5px rgb(0, 162, 255);
+}
+.payment-description {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+    font-size: 12px;
+}
+
+.next-btn {
+    display: none;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+
+.continue-shopping,
+.view-orders{
+    width: 275px;
+    padding: 10px;
+    border: none;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px){
+    .container {
+        width: 100%;
+        margin: 0px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pay-container {
+        padding: 25px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .payment-section h1 {
+        font-size: 24px;
+    }
+
+    .btn-submit-payment {
+        font-size: 16px;
+    }
+
+    .payment-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .payment-section h1 {
+        font-size: 20px;
+    }
+
+    .btn-submit-payment {
+        font-size: 14px;
+    }
+
+    .continue-shopping,
+    .view-orders {
+        width: 185px;
+    }
+}

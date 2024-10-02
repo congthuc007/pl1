@@ -1,4 +1,4 @@
-.container{
+.container-buy{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +6,6 @@
     background-color:  #eeeeee;
     width: 100%;
     margin: 0px auto;
-    padding: 0px 150px;
 }
 
 .address, .product, .pay, .send{
@@ -294,7 +293,7 @@
 
 /* CSS cho màn hình di động */
 @media only screen and (max-width: 900px){
-    .container {
+    .container-buy {
         width: 100%;
         margin: 0px;
         padding: 0;
@@ -311,7 +310,7 @@
     }
 }
 @media only screen and (max-width: 768px) {
-    .container {
+    .container-buy {
         flex: 1;
         gap: 0px;
     }
