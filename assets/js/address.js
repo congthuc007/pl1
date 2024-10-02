@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var districtSelect = document.getElementById('district');
   var wardSelect = document.getElementById('ward');
   var streetInput = document.getElementById('street');
-  var fullAddressDisplay = document.getElementById('full-address'); // textarea
+  var fullAddressDisplay = document.getElementById('diachi');
   var addButton = document.getElementById('add-address'); 
 
     // Dữ liệu cho tỉnh thành, quận huyện và phường xã

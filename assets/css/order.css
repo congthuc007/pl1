@@ -104,6 +104,25 @@
     font-size: 12px;
 }
 
+.order-note{
+    background-color: #f2ece4;
+    margin: 0px 0px 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.h-od{
+    font-weight: 700;
+    margin: 5px 0px 10px;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.note-od{
+    font-size: 15px;
+    margin: 5px;
+}
+
 
 .favorite-badge {
     background-color: #ffd700;
@@ -214,6 +233,14 @@
 .product-rating button:hover {
     background-color: #0056b3;
 }
+.empty-order-message {
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    padding: 20px;
+}
+
 
 /* Đặt các thuộc tính cơ bản cho phiên bản di động */
 @media only screen and (max-width: 900px){
