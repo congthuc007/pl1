@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "bank-transfer": document.getElementById('bank-transfer-description'),
     };
 
+    var isOrderConfirmed = false; // Thêm biến trạng thái
+
     function hideAllDescriptions() {
         for (var key in descriptions) {
             if (descriptions.hasOwnProperty(key)) {
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function showDescription(selectedMethod) {
+        if (isOrderConfirmed) return; // Nếu đơn hàng đã được xác nhận, không cho hiển thị mô tả
         hideAllDescriptions();
         if (descriptions[selectedMethod]) {
             descriptions[selectedMethod].style.display = 'block';
@@ -39,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
         var confirmation = confirm('Bạn có chắc chắn muốn hoàn tất đơn hàng không?');
 
         if (confirmation) {
+            isOrderConfirmed = true; // Đặt trạng thái xác nhận đơn hàng
+
             // Xử lý thông báo thành công
             if (selectedPaymentMethod === 'cod') {
                 paymentSuccessMessage.textContent = 'Bạn đã chọn Thanh toán khi nhận hàng. Đơn hàng sẽ được xử lý!';
@@ -59,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Ẩn các nút radio sau khi hoàn tất đơn hàng
             paymentOptions.forEach(function(option) {
                 option.style.display = 'none';
+                option.checked = false; // Bỏ chọn tất cả các tùy chọn
             });
 
             // Ẩn nút hoàn tất đơn hàng sau khi xác nhận
